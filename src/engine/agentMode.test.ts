@@ -39,6 +39,17 @@ describe('Agent Mode analyzer', () => {
     const snap = snapshotOf('1 Totally Fake Cardname XYZ\n1 Sol Ring')
     expect(snap.unresolved.length).toBeGreaterThan(0)
   })
+
+  it('rounds scores in the snapshot and diagnosis copy to two decimal places', () => {
+    const snap = snapshotOf(SAMPLE_DECK)
+    for (const value of Object.values(snap.categories)) {
+      expect(value).toBe(Math.round(value * 100) / 100)
+    }
+    expect(JSON.stringify(snap)).not.toMatch(/\d+\.\d{3,}/)
+    expect(snap.diagnosis.some((line) => /Score \d+\.\d{2}\./.test(line))).toBe(true)
+    expect(snap.weaknesses.every((w) => !/\d+\.\d{3,}/.test(w.detail))).toBe(true)
+    expect(snap.diagnosis.join('\n')).not.toMatch(/\d+\.\d{3,}/)
+  })
 })
 
 describe('propose_changes', () => {

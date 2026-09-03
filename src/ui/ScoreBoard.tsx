@@ -1,3 +1,4 @@
+import { formatScore } from '../lib/formatScore.ts'
 import { scoreTone } from '../lib/scoreTone.ts'
 import type { AgentAnalysis, AgentCategory } from '../engine/types.ts'
 
@@ -26,15 +27,15 @@ export function ScoreBoard({
       <div className="agent-score-hero">
         <div className="t-eyebrow">Deck health</div>
         <div className="agent-score-number" style={{ color: tone.color }}>
-          {analysis.overall}
+          {formatScore(analysis.overall)}
         </div>
         <div className="agent-score-outof">out of 100</div>
         {previousOverall !== null && (
           <p className="agent-score-delta">
-            Previous {previousOverall} → current {analysis.overall}
+            Previous {formatScore(previousOverall)} → current {formatScore(analysis.overall)}
             <span className={analysis.overall - previousOverall >= 0 ? 'up' : 'down'}>
               {analysis.overall - previousOverall >= 0 ? ' +' : ' '}
-              {analysis.overall - previousOverall}
+              {formatScore(analysis.overall - previousOverall)}
             </span>
           </p>
         )}
@@ -49,7 +50,7 @@ export function ScoreBoard({
             <li key={key} className={isWeak ? 'weak' : undefined}>
               <div className="agent-cat-head">
                 <span>{LABELS[key]}</span>
-                <strong style={{ color: barTone.color }}>{value}</strong>
+                <strong style={{ color: barTone.color }}>{formatScore(value)}</strong>
               </div>
               <div className="agent-cat-track">
                 <div
