@@ -4,6 +4,7 @@ import { ThemeToggle } from '../components/ThemeToggle'
 import { ScoreBoard } from '../ui/ScoreBoard'
 import { ProposalPanel } from '../ui/ProposalPanel'
 import { AgentLog } from '../ui/AgentLog'
+import { scrollToProposalsIfCompact } from '../ui/scrollToProposals.ts'
 import { deckMeta } from '../engine/parse.ts'
 import { registerAgentTools } from '../webmcp/registerTools.ts'
 import {
@@ -24,8 +25,17 @@ interface AgentModePageProps {
 export default function AgentModePage({ theme, onToggleTheme }: AgentModePageProps) {
   const state = useDeckStore()
   const fileRef = useRef<HTMLInputElement>(null)
+  const proposalsRef = useRef<HTMLDivElement>(null)
+  const scoreboardRef = useRef<HTMLElement>(null)
+  const scrollToProposals = useRef(false)
   const [webmcp, setWebmcp] = useState('WebMCP: checking')
   const meta = deckMeta(state.decklist)
+
+  useEffect(() => {
+    if (!scrollToProposals.current || !state.proposals) return
+    scrollToProposals.current = false
+    scrollToProposalsIfCompact(proposalsRef.current)
+  }, [state.proposals])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -97,7 +107,12 @@ export default function AgentModePage({ theme, onToggleTheme }: AgentModePagePro
                   type="button"
                   className="mox-ghostbtn"
                   disabled={state.busy || !state.decklist.trim()}
-                  onClick={() => void proposeChanges()}
+                  onClick={() => {
+                    scrollToProposals.current = true
+                    void proposeChanges().then((result) => {
+                      if (result && 'error' in result) scrollToProposals.current = false
+                    })
+                  }}
                 >
                   Propose changes
                 </button>
@@ -106,7 +121,10 @@ export default function AgentModePage({ theme, onToggleTheme }: AgentModePagePro
                 type="button"
                 className="mox-primarybtn"
                 disabled={state.busy || !state.decklist.trim()}
-                onClick={() => void analyzeDeck()}
+                onClick={() => {
+                  void analyzeDeck()
+                  scrollToProposalsIfCompact(scoreboardRef.current)
+                }}
               >
                 {state.busy ? 'Working…' : 'Analyze'}
               </button>
@@ -127,31 +145,31 @@ export default function AgentModePage({ theme, onToggleTheme }: AgentModePagePro
         </section>
 
         <aside className="agent-side">
-          {state.analysis ? (
-            <ScoreBoard analysis={state.analysis} previousOverall={state.previous?.overall ?? null} />
-          ) : (
-            <section className="agent-scoreboard">
-              <div className="t-eyebrow">Health dashboard</div>
-              <p className="agent-muted">Run Analyze (or call analyze_deck) to score this list. Sample deck is prefilled.</p>
-            </section>
-          )}
-          <ProposalPanel
-            key={`${state.proposals?.status ?? 'none'}:${state.proposals?.cuts.map((c) => c.name).join('|')}:${state.proposals?.adds.map((a) => a.name).join('|')}`}
-            proposals={state.proposals}
-            busy={state.busy}
-            onAcceptAll={() => {
-              if (!state.proposals) return
-              void applyChanges({
-                cuts: state.proposals.cuts.map((c) => c.name),
-                adds: state.proposals.adds.map((a) => a.name),
-                confirm: true,
-              })
-            }}
-            onAcceptSelected={(cuts, adds) => {
-              void applyChanges({ cuts, adds, confirm: true })
-            }}
-            onReject={() => rejectProposals()}
+          <ScoreBoard
+            ref={scoreboardRef}
+            analysis={state.analysis}
+            previousOverall={state.previous?.overall ?? null}
+            loading={state.busy}
           />
+          <div id="agent-proposals" ref={proposalsRef}>
+            <ProposalPanel
+              key={`${state.proposals?.status ?? 'none'}:${state.proposals?.cuts.map((c) => c.name).join('|')}:${state.proposals?.adds.map((a) => a.name).join('|')}`}
+              proposals={state.proposals}
+              busy={state.busy}
+              onAcceptAll={() => {
+                if (!state.proposals) return
+                void applyChanges({
+                  cuts: state.proposals.cuts.map((c) => c.name),
+                  adds: state.proposals.adds.map((a) => a.name),
+                  confirm: true,
+                })
+              }}
+              onAcceptSelected={(cuts, adds) => {
+                void applyChanges({ cuts, adds, confirm: true })
+              }}
+              onReject={() => rejectProposals()}
+            />
+          </div>
           <AgentLog log={state.log} lastAction={state.lastAction} webmcp={webmcp} />
         </aside>
       </main>

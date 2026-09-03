@@ -1,3 +1,4 @@
+import type { CSSProperties, Ref } from 'react'
 import { formatScore } from '../lib/formatScore.ts'
 import { scoreTone } from '../lib/scoreTone.ts'
 import type { AgentAnalysis, AgentCategory } from '../engine/types.ts'
@@ -12,7 +13,80 @@ const LABELS: Record<AgentCategory, string> = {
 
 const ORDER: AgentCategory[] = ['ramp', 'draw', 'interaction', 'curve', 'wincons']
 
+const FAN = [
+  { '--fan-x': 'calc(-50% - 28px)', '--fan-y': 'calc(-50% + 6px)', '--fan-r': '-18deg', animationDelay: '0ms', zIndex: 1 },
+  { '--fan-x': '-50%', '--fan-y': 'calc(-50% - 8px)', '--fan-r': '0deg', animationDelay: '-600ms', zIndex: 2 },
+  { '--fan-x': 'calc(-50% + 28px)', '--fan-y': 'calc(-50% + 6px)', '--fan-r': '18deg', animationDelay: '-1200ms', zIndex: 1 },
+]
+
+function ScoreBoardLoading({ compact }: { compact: boolean }) {
+  return (
+    <div className="agent-score-loading" role="status" aria-live="polite">
+      <div className="mox-shuffle-stage agent-score-shuffle" aria-hidden="true">
+        {FAN.map((style, i) => (
+          <div key={i} className="mox-shuffle-card" style={style as CSSProperties} />
+        ))}
+      </div>
+      <p className="agent-score-loading-msg">Scoring deck…</p>
+      {!compact && (
+        <ul className="agent-score-skel" aria-hidden="true">
+          <li />
+          <li />
+          <li />
+          <li />
+          <li />
+        </ul>
+      )}
+    </div>
+  )
+}
+
 export function ScoreBoard({
+  analysis,
+  previousOverall,
+  loading = false,
+  ref,
+}: {
+  analysis: AgentAnalysis | null
+  previousOverall: number | null
+  loading?: boolean
+  ref?: Ref<HTMLElement>
+}) {
+  const classes = [
+    'agent-scoreboard',
+    loading ? 'is-loading' : '',
+    analysis ? 'has-analysis' : '',
+  ]
+    .filter(Boolean)
+    .join(' ')
+
+  return (
+    <section
+      ref={ref}
+      id="agent-scoreboard"
+      className={classes}
+      aria-label="Health dashboard"
+      aria-busy={loading || undefined}
+    >
+      {loading && <ScoreBoardLoading compact={analysis !== null} />}
+
+      {analysis ? (
+        <ScoreBoardBody analysis={analysis} previousOverall={previousOverall} />
+      ) : (
+        !loading && (
+          <>
+            <div className="t-eyebrow">Health dashboard</div>
+            <p className="agent-muted">
+              Run Analyze (or call analyze_deck) to score this list. Sample deck is prefilled.
+            </p>
+          </>
+        )
+      )}
+    </section>
+  )
+}
+
+function ScoreBoardBody({
   analysis,
   previousOverall,
 }: {
@@ -23,7 +97,7 @@ export function ScoreBoard({
   const weak = new Set(analysis.weaknesses.map((w) => w.category))
 
   return (
-    <section className="agent-scoreboard" aria-label="Health dashboard">
+    <div className="agent-score-content">
       <div className="agent-score-hero">
         <div className="t-eyebrow">Deck health</div>
         <div className="agent-score-number" style={{ color: tone.color }}>
@@ -71,6 +145,6 @@ export function ScoreBoard({
           ))}
         </ul>
       </div>
-    </section>
+    </div>
   )
 }

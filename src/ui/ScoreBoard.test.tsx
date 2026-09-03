@@ -14,9 +14,38 @@ const analysis: AgentAnalysis = {
   diagnosis: ['Need more draw.'],
 }
 
-describe('ScoreBoard score formatting', () => {
+describe('ScoreBoard loading', () => {
   afterEach(() => {
     cleanup()
+  })
+
+  it('shows a scoring status on the empty health card while loading', () => {
+    render(<ScoreBoard analysis={null} previousOverall={null} loading />)
+
+    const card = screen.getByRole('region', { name: 'Health dashboard' })
+    expect(card).toHaveAttribute('aria-busy', 'true')
+    expect(card).toHaveClass('is-loading')
+    expect(screen.getByRole('status')).toHaveTextContent('Scoring deck…')
+    expect(screen.queryByText(/Run Analyze/i)).not.toBeInTheDocument()
+  })
+
+  it('overlays scoring status on existing scores while re-analyzing', () => {
+    render(<ScoreBoard analysis={analysis} previousOverall={58} loading />)
+
+    const card = screen.getByRole('region', { name: 'Health dashboard' })
+    expect(card).toHaveAttribute('aria-busy', 'true')
+    expect(card).toHaveClass('is-loading', 'has-analysis')
+    expect(screen.getByRole('status')).toHaveTextContent('Scoring deck…')
+    expect(screen.getByText('64.00')).toBeInTheDocument()
+    expect(screen.getByText('Deck health')).toBeInTheDocument()
+  })
+
+  it('keeps the idle placeholder when there is no analysis', () => {
+    render(<ScoreBoard analysis={null} previousOverall={null} />)
+
+    expect(screen.getByText(/Run Analyze \(or call analyze_deck\)/i)).toBeInTheDocument()
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+    expect(screen.getByRole('region', { name: 'Health dashboard' })).not.toHaveAttribute('aria-busy')
   })
 
   it('shows category, overall, delta, and diagnosis scores to two decimal places', () => {
