@@ -1,5 +1,29 @@
 import { useState } from 'react'
+import type { LocalCard } from '../lib/cardDatabase'
+import { useCardPreview } from '../hooks/useCardPreview'
 import type { PendingProposals } from '../state/deckStore.ts'
+
+/** Minimal card shell for the Scryfall hover preview — the image is fetched by name. */
+function hoverCard(name: string): LocalCard {
+  return { name, cmc: 0, cost: '', type: '', cats: [], note: '', qty: 1 }
+}
+
+function ProposalCardName({
+  name,
+  onHover,
+  onLeave,
+}: {
+  name: string
+  onHover: (card: LocalCard, x: number, y: number) => void
+  onLeave: () => void
+}) {
+  const move = (e: React.MouseEvent) => onHover(hoverCard(name), e.clientX, e.clientY)
+  return (
+    <strong onMouseEnter={move} onMouseMove={move} onMouseLeave={onLeave}>
+      {name}
+    </strong>
+  )
+}
 
 export function ProposalPanel({
   proposals,
@@ -14,6 +38,7 @@ export function ProposalPanel({
   onAcceptSelected: (cuts: string[], adds: string[]) => void
   onReject: () => void
 }) {
+  const { onHover, onLeave, previewNode } = useCardPreview()
   const [selectedCuts, setSelectedCuts] = useState(() => proposals?.cuts.map((c) => c.name) ?? [])
   const [selectedAdds, setSelectedAdds] = useState(() => proposals?.adds.map((a) => a.name) ?? [])
 
@@ -53,7 +78,7 @@ export function ProposalPanel({
                 onChange={() => toggle(cut.name, selectedCuts, setSelectedCuts)}
               />
               <span>
-                <strong>{cut.name}</strong>
+                <ProposalCardName name={cut.name} onHover={onHover} onLeave={onLeave} />
                 <em>{cut.helps}</em>
                 <small>{cut.reason}</small>
               </span>
@@ -72,7 +97,7 @@ export function ProposalPanel({
                 onChange={() => toggle(add.name, selectedAdds, setSelectedAdds)}
               />
               <span>
-                <strong>{add.name}</strong>
+                <ProposalCardName name={add.name} onHover={onHover} onLeave={onLeave} />
                 <em>{add.helps}</em>
                 <small>{add.reason}</small>
               </span>
@@ -80,6 +105,7 @@ export function ProposalPanel({
           ))}
         </div>
       </div>
+      {previewNode}
       {pending && (
         <div className="agent-proposal-actions">
           <button type="button" className="mox-primarybtn" disabled={busy} onClick={onAcceptAll}>
