@@ -1178,6 +1178,82 @@ img { max-width: 100%; display: block; }
   border-radius: var(--radius-lg); padding: 18px; margin-bottom: 14px;
   box-shadow: var(--shadow-card);
 }
+.agent-scoreboard { position: relative; overflow: hidden; }
+#agent-scoreboard, #agent-proposals { scroll-margin-top: 16px; }
+.agent-scoreboard.is-loading {
+  min-height: 220px;
+  border-color: rgba(131, 62, 255, 0.45);
+  box-shadow: var(--shadow-card), 0 0 24px rgba(131, 62, 255, 0.18);
+}
+.agent-score-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 184px;
+  text-align: center;
+}
+.agent-scoreboard.has-analysis.is-loading .agent-score-loading {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  min-height: 0;
+  padding: 18px;
+  background: color-mix(in srgb, var(--surface-card) 82%, transparent);
+  backdrop-filter: blur(7px);
+}
+.agent-scoreboard.has-analysis.is-loading .agent-score-content {
+  opacity: 0.22;
+  filter: saturate(0.7);
+  pointer-events: none;
+  user-select: none;
+}
+.agent-score-shuffle {
+  width: 140px;
+  height: 72px;
+}
+.agent-score-shuffle .mox-shuffle-card {
+  width: 36px;
+  height: 50px;
+  border-radius: 6px;
+}
+.agent-score-loading-msg {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--text-secondary);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  animation: mox-msg-fade 1.8s ease-in-out infinite;
+}
+.agent-score-skel {
+  list-style: none;
+  width: min(100%, 280px);
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.agent-score-skel li {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--border-subtle) 0%,
+    rgba(131, 62, 255, 0.38) 50%,
+    var(--border-subtle) 100%
+  );
+  background-size: 200% 100%;
+  animation: agent-score-shimmer 1.4s ease-in-out infinite;
+}
+.agent-score-skel li:nth-child(2) { width: 88%; }
+.agent-score-skel li:nth-child(3) { width: 94%; }
+.agent-score-skel li:nth-child(4) { width: 76%; }
+.agent-score-skel li:nth-child(5) { width: 82%; animation-delay: 0.15s; }
+@keyframes agent-score-shimmer {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
 .agent-score-hero { text-align: center; }
 .agent-score-number {
   font-family: var(--font-display); font-weight: 800;
