@@ -1,0 +1,155 @@
+{
+  "listVersion": "2026-07-03",
+  "source": "Curated (moxscore), validated via Scryfall /cards/collection",
+  "count": 37,
+  "cards": [
+    {
+      "name": "Ancient Tomb",
+      "oracleId": "23467047-6dba-4498-b783-1ebc4f74b8c2"
+    },
+    {
+      "name": "Bubbling Muck",
+      "oracleId": "3c7f2b29-9f42-41ab-a2d4-7a450fb0242d"
+    },
+    {
+      "name": "Burnt Offering",
+      "oracleId": "86eb30a0-0beb-42db-9ddf-cf8be6c99dd3"
+    },
+    {
+      "name": "Cabal Ritual",
+      "oracleId": "5b5bf1fa-6502-4790-b66b-f0f8504ebc7c"
+    },
+    {
+      "name": "Chrome Mox",
+      "oracleId": "ec3d4466-547c-4e02-b1b5-a156ec4637e9"
+    },
+    {
+      "name": "City of Traitors",
+      "oracleId": "f161111d-9747-47b3-bb10-3c8bded32e21"
+    },
+    {
+      "name": "Crystal Vein",
+      "oracleId": "616d6013-24f4-4999-9bf3-5b0764e52fa6"
+    },
+    {
+      "name": "Culling the Weak",
+      "oracleId": "6385fd0d-256d-4400-9319-afa8170024db"
+    },
+    {
+      "name": "Dark Ritual",
+      "oracleId": "53f7c868-b03e-4fc2-8dcf-a75bbfa3272b"
+    },
+    {
+      "name": "Desperate Ritual",
+      "oracleId": "3620ab8f-b693-4225-bb96-5ca3cb3fa465"
+    },
+    {
+      "name": "Elvish Spirit Guide",
+      "oracleId": "6b0e23cf-7d68-4329-86db-7adc26abd86b"
+    },
+    {
+      "name": "Gemstone Caverns",
+      "oracleId": "c0adbddc-b070-4c5f-afe0-0474c72a9251"
+    },
+    {
+      "name": "Grim Monolith",
+      "oracleId": "229d6627-1292-4ae1-8849-b0f956fa6540"
+    },
+    {
+      "name": "High Tide",
+      "oracleId": "dc671205-f2fa-454f-9957-921a6069ad53"
+    },
+    {
+      "name": "Jeska's Will",
+      "oracleId": "0fd114c4-092b-4e28-b0dc-ef529f3bc73e"
+    },
+    {
+      "name": "Jeweled Lotus",
+      "oracleId": "23216e59-f147-4bb7-a698-12777c2f8584"
+    },
+    {
+      "name": "Lion's Eye Diamond",
+      "oracleId": "ee6099b0-fb1f-42f1-b862-7708c6e36d05"
+    },
+    {
+      "name": "Lotus Petal",
+      "oracleId": "32e5339e-9e4f-46f8-b305-f9d6d3ba8bb5"
+    },
+    {
+      "name": "Lotus Vale",
+      "oracleId": "01fc5bb3-ebd7-4ab4-8aef-2ece1e1d9b7c"
+    },
+    {
+      "name": "Mana Crypt",
+      "oracleId": "2c63e4e1-89d2-4bc6-a232-94e75c4b1c8a"
+    },
+    {
+      "name": "Mana Geyser",
+      "oracleId": "a8dba58b-2956-492e-ae30-49db2ae68e53"
+    },
+    {
+      "name": "Mana Vault",
+      "oracleId": "736892cb-a34b-4bb9-b56c-e26e3db207a2"
+    },
+    {
+      "name": "Mox Amber",
+      "oracleId": "7a43bd27-fdd8-41f0-9bc4-92568f3408f1"
+    },
+    {
+      "name": "Mox Diamond",
+      "oracleId": "f3c5978a-70fa-431f-933b-b954bd0db0ea"
+    },
+    {
+      "name": "Mox Opal",
+      "oracleId": "de2440de-e948-4811-903c-0bbe376ff64d"
+    },
+    {
+      "name": "Orcish Lumberjack",
+      "oracleId": "383e3fe4-8558-4561-8632-6eadb5d5963c"
+    },
+    {
+      "name": "Pyretic Ritual",
+      "oracleId": "86ef6474-613f-41fb-931c-d4279b03ed99"
+    },
+    {
+      "name": "Rain of Filth",
+      "oracleId": "aa77980d-0434-40f0-990f-1c8c50610174"
+    },
+    {
+      "name": "Rite of Flame",
+      "oracleId": "8a2e53f9-8100-488f-8504-b59e9bd1cc29"
+    },
+    {
+      "name": "Sacrifice",
+      "oracleId": "068b3692-411b-44d4-a7e9-005262760cfc"
+    },
+    {
+      "name": "Scorched Ruins",
+      "oracleId": "6ee68855-c8c5-422b-88da-163c09a96416"
+    },
+    {
+      "name": "Seething Song",
+      "oracleId": "64bf8929-f5f2-4d50-8667-13b1d007bcfc"
+    },
+    {
+      "name": "Simian Spirit Guide",
+      "oracleId": "44e0ffa3-8915-4c1f-8f1a-4aeea1365f07"
+    },
+    {
+      "name": "Sol Ring",
+      "oracleId": "6ad8011d-3471-4369-9d68-b264cc027487"
+    },
+    {
+      "name": "Songs of the Damned",
+      "oracleId": "39419d29-47e7-4d71-953b-96a2e14ae964"
+    },
+    {
+      "name": "Treasonous Ogre",
+      "oracleId": "826d4279-1576-4898-a1c2-26fd547fb0d0"
+    },
+    {
+      "name": "Wild Cantor",
+      "oracleId": "24472823-d33c-4d96-add1-233116f6f4f7"
+    }
+  ]
+}

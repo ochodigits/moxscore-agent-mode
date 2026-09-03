@@ -1,0 +1,359 @@
+{
+  "listVersion": "2026-07-03",
+  "source": "Curated (moxscore): efficient/unconditional tutors; land-ramp tutors excluded",
+  "count": 88,
+  "cards": [
+    {
+      "name": "Academy Rector",
+      "oracleId": "e3c85068-b4b6-40b9-a16c-5c3b2d059ec4"
+    },
+    {
+      "name": "Arena Rector",
+      "oracleId": "6a23963c-21dc-4d21-8d28-5abad7f859a1"
+    },
+    {
+      "name": "Behold the Beyond",
+      "oracleId": "b2402ac0-8ab8-413c-bac4-9f4ba2163c58"
+    },
+    {
+      "name": "Beseech the Mirror",
+      "oracleId": "cbbe535b-12d6-4e6c-8b26-9220f06a1604"
+    },
+    {
+      "name": "Beseech the Queen",
+      "oracleId": "cf94cafc-527e-4b27-8a28-7807435aaccf"
+    },
+    {
+      "name": "Birthing Pod",
+      "oracleId": "f8b9dd54-0837-47f4-ad14-7a0322d46d5f"
+    },
+    {
+      "name": "Boonweaver Giant",
+      "oracleId": "79eed0c6-1853-4032-9d12-aebf5e15e78c"
+    },
+    {
+      "name": "Bring to Light",
+      "oracleId": "67183256-23cc-4af5-991e-d7148e942c63"
+    },
+    {
+      "name": "Chord of Calling",
+      "oracleId": "6789a170-f2c5-4fc0-8a45-2b2361e67410"
+    },
+    {
+      "name": "Cruel Tutor",
+      "oracleId": "d9353eb6-c7e7-4d85-a0c2-32b1d091881a"
+    },
+    {
+      "name": "Dark Petition",
+      "oracleId": "79acdb37-8d52-4bc8-a7be-a7e92b6166e5"
+    },
+    {
+      "name": "Demonic Consultation",
+      "oracleId": "9a1412db-45ad-46ea-8f12-a85d203113d8"
+    },
+    {
+      "name": "Demonic Tutor",
+      "oracleId": "82004860-e589-4e38-8d61-8c0210e4ea39"
+    },
+    {
+      "name": "Diabolic Intent",
+      "oracleId": "038519b9-bca8-4b27-b5ac-2409595469d0"
+    },
+    {
+      "name": "Diabolic Revelation",
+      "oracleId": "dcf438a7-adc4-4658-b75a-2dd633f595a7"
+    },
+    {
+      "name": "Diabolic Tutor",
+      "oracleId": "14589b6b-1814-46f9-a364-83cc15dacac2"
+    },
+    {
+      "name": "Doomsday",
+      "oracleId": "721eb5a2-d7cf-4db0-8013-ef3f596c52a5"
+    },
+    {
+      "name": "Drift of Phantasms",
+      "oracleId": "6ee51134-c4ad-4101-8ce2-23dde9359cd4"
+    },
+    {
+      "name": "Eladamri's Call",
+      "oracleId": "4acb6612-54e8-428d-acb6-c7259a5ad6a8"
+    },
+    {
+      "name": "Eldritch Evolution",
+      "oracleId": "0f77c0c9-4dc4-489a-b547-e93287c4d1a5"
+    },
+    {
+      "name": "Enlightened Tutor",
+      "oracleId": "c5229c17-b7be-4b05-b683-f2277edc4849"
+    },
+    {
+      "name": "Expedition Map",
+      "oracleId": "8fcf50cd-e6d0-4516-850f-d42ee75dcc3a"
+    },
+    {
+      "name": "Fabricate",
+      "oracleId": "422e1869-134f-463d-9fa1-86b66a998b3e"
+    },
+    {
+      "name": "Fauna Shaman",
+      "oracleId": "35b8fa77-4e85-418b-b335-cd1af127075c"
+    },
+    {
+      "name": "Fierce Empath",
+      "oracleId": "5104053a-d394-4b00-82a4-60fd9f051a6e"
+    },
+    {
+      "name": "Finale of Devastation",
+      "oracleId": "69872a9a-fe54-4e58-940c-89395af71acd"
+    },
+    {
+      "name": "Gamble",
+      "oracleId": "a54f0869-94c8-42af-9080-166efb9486a4"
+    },
+    {
+      "name": "Gifts Ungiven",
+      "oracleId": "58aec411-167d-4709-8560-793eaaed62c5"
+    },
+    {
+      "name": "Goblin Matron",
+      "oracleId": "145737a7-c597-4dec-b752-207c2d0501e3"
+    },
+    {
+      "name": "Goblin Recruiter",
+      "oracleId": "792e1072-00bf-4f63-b956-5f20cdf09f11"
+    },
+    {
+      "name": "Green Sun's Zenith",
+      "oracleId": "0d96b60b-a060-48ee-bb83-93f1c4a10669"
+    },
+    {
+      "name": "Grim Tutor",
+      "oracleId": "e62f8d69-a559-4f13-a5c9-5fb750b4af2c"
+    },
+    {
+      "name": "Hoarding Broodlord",
+      "oracleId": "18e856b5-aab7-4802-8cec-1d44dd95d9f7"
+    },
+    {
+      "name": "Idyllic Tutor",
+      "oracleId": "57c9ff89-dd30-467b-bb3e-499eeea8cb94"
+    },
+    {
+      "name": "Imperial Recruiter",
+      "oracleId": "4d6a1391-817a-4ddc-840d-886b138eeb3f"
+    },
+    {
+      "name": "Imperial Seal",
+      "oracleId": "16cd0b90-f70c-4efa-b252-8de8784ef9a3"
+    },
+    {
+      "name": "Increasing Ambition",
+      "oracleId": "09027657-bc9a-4702-88c1-e5b3534ad188"
+    },
+    {
+      "name": "Insidious Dreams",
+      "oracleId": "4badd4e0-e5d7-4516-b220-cea2b02c79aa"
+    },
+    {
+      "name": "Intuition",
+      "oracleId": "3c9faba7-f2d3-4978-be94-020dc8003dc0"
+    },
+    {
+      "name": "Merchant Scroll",
+      "oracleId": "86cebe2a-95e7-4f22-99cc-e805aeaf347e"
+    },
+    {
+      "name": "Moggcatcher",
+      "oracleId": "4845dc21-7534-4896-b298-4d44cd7a3b27"
+    },
+    {
+      "name": "Momir Vig, Simic Visionary",
+      "oracleId": "6202d1cf-5359-4783-846d-7f35460e42b4"
+    },
+    {
+      "name": "Muddle the Mixture",
+      "oracleId": "0826cf7d-7ccc-459b-a92f-29dc169628f8"
+    },
+    {
+      "name": "Mwonvuli Beast Tracker",
+      "oracleId": "b6265654-84c3-469b-9afa-f752fd64abe0"
+    },
+    {
+      "name": "Mystical Tutor",
+      "oracleId": "fb81f95c-70f8-4eb7-8d15-15d0ae23ec03"
+    },
+    {
+      "name": "Natural Order",
+      "oracleId": "8c1fe337-375a-4add-93b6-0ac39ed72b4f"
+    },
+    {
+      "name": "Neoform",
+      "oracleId": "420c6dcf-966d-4a4c-a0ef-23037ab8b325"
+    },
+    {
+      "name": "Netherborn Altar",
+      "oracleId": "a127d62a-8709-46bb-9301-96f09e7924a1"
+    },
+    {
+      "name": "Open the Armory",
+      "oracleId": "2ecf7771-8061-4710-ad2e-80b092ae0b4b"
+    },
+    {
+      "name": "Personal Tutor",
+      "oracleId": "90f54959-2c9b-4b8a-84c9-d6893eb43553"
+    },
+    {
+      "name": "Prime Speaker Vannifar",
+      "oracleId": "b543bfa2-0174-4dd8-9ee6-09b92fb44934"
+    },
+    {
+      "name": "Profane Tutor",
+      "oracleId": "27a1f42c-0b86-4609-9609-1fa9cab7e7c9"
+    },
+    {
+      "name": "Protean Hulk",
+      "oracleId": "10180e2f-90c5-4d41-ba44-16b14948f923"
+    },
+    {
+      "name": "Ranger of Eos",
+      "oracleId": "b9c8b929-f3ee-457f-9cbc-9de18eb69dc5"
+    },
+    {
+      "name": "Ranger-Captain of Eos",
+      "oracleId": "cada3481-cc2b-4412-b9b5-0436af53aad2"
+    },
+    {
+      "name": "Razaketh, the Foulblooded",
+      "oracleId": "136c9ecb-59b4-4ef6-bcb2-7b8d3df3ee75"
+    },
+    {
+      "name": "Recruiter of the Guard",
+      "oracleId": "d521a329-a53a-4962-810a-2abed80df260"
+    },
+    {
+      "name": "Reshape",
+      "oracleId": "42a3855d-25ab-45b3-9e5d-9a0f3da35a05"
+    },
+    {
+      "name": "Rune-Scarred Demon",
+      "oracleId": "14aefe99-fb60-4f1c-a71f-7ffbe94c8b13"
+    },
+    {
+      "name": "Scheming Symmetry",
+      "oracleId": "6dfb50d7-359b-4644-90e3-7ecdacee7c12"
+    },
+    {
+      "name": "Search for Glory",
+      "oracleId": "fab29bc7-1f0a-4df4-b8f1-c008ce5583d2"
+    },
+    {
+      "name": "Shared Summons",
+      "oracleId": "c2c9dbd0-2062-4ee1-b32e-8eeacd95589c"
+    },
+    {
+      "name": "Sidisi, Undead Vizier",
+      "oracleId": "3406db41-6b95-48fc-b58e-4476220fd34d"
+    },
+    {
+      "name": "Signal the Clans",
+      "oracleId": "fd68ae3c-52cd-4b20-b015-bd31378d972e"
+    },
+    {
+      "name": "Sisay, Weatherlight Captain",
+      "oracleId": "fb777610-7562-4d9d-8497-62c562e6d7cb"
+    },
+    {
+      "name": "Solve the Equation",
+      "oracleId": "f02682f0-26c0-4032-9df3-273b6a45d0a8"
+    },
+    {
+      "name": "Spellseeker",
+      "oracleId": "47a785ed-8095-4685-8daa-02c4e2b0ffcd"
+    },
+    {
+      "name": "Steelshaper's Gift",
+      "oracleId": "d9abda7e-6ca2-42ea-ab24-c542e57014f1"
+    },
+    {
+      "name": "Sterling Grove",
+      "oracleId": "2c275a85-5a15-46cd-a6e7-add63f9b853d"
+    },
+    {
+      "name": "Stoneforge Mystic",
+      "oracleId": "358789f9-7d87-411d-919e-d597da665cbd"
+    },
+    {
+      "name": "Survival of the Fittest",
+      "oracleId": "119d719d-e965-45b4-9bc9-ac03211b10c2"
+    },
+    {
+      "name": "Tainted Pact",
+      "oracleId": "1a85ba2b-ae10-4917-954a-7709b75a9740"
+    },
+    {
+      "name": "Tezzeret the Seeker",
+      "oracleId": "4aeafdf3-7828-4114-8c74-3bd46357caec"
+    },
+    {
+      "name": "Time of Need",
+      "oracleId": "4f2adfd0-c8ab-4bcc-ae55-cb0e798aec7f"
+    },
+    {
+      "name": "Tinker",
+      "oracleId": "254878f0-be90-4653-a395-0c41258fceaf"
+    },
+    {
+      "name": "Tooth and Nail",
+      "oracleId": "382b7873-e78d-473b-8346-d92d16e8f634"
+    },
+    {
+      "name": "Transmute Artifact",
+      "oracleId": "dbe792f9-22be-4972-b418-99a6190c4421"
+    },
+    {
+      "name": "Tribute Mage",
+      "oracleId": "c2b51295-8820-425f-a517-55231123c7de"
+    },
+    {
+      "name": "Trinket Mage",
+      "oracleId": "ffc95093-24a2-4616-a44a-24788e8df9c8"
+    },
+    {
+      "name": "Trophy Mage",
+      "oracleId": "08afc0d7-192f-4ab6-b6a0-c4265cf5e225"
+    },
+    {
+      "name": "Vampiric Rites",
+      "oracleId": "660de988-b6fb-4f36-8006-42af3e7f908d"
+    },
+    {
+      "name": "Vampiric Tutor",
+      "oracleId": "ededbdae-d9dc-4206-9335-d7158f2d7700"
+    },
+    {
+      "name": "Varragoth, Bloodsky Sire",
+      "oracleId": "68b41a04-8cb0-4edf-b488-a219494453ae"
+    },
+    {
+      "name": "Wargate",
+      "oracleId": "26f39abe-ea0b-400d-b11c-03ee4cf50915"
+    },
+    {
+      "name": "Whir of Invention",
+      "oracleId": "152b91c9-cc07-4ca8-944f-9bc2242a2283"
+    },
+    {
+      "name": "Wishclaw Talisman",
+      "oracleId": "81c70ae7-3c18-4c9b-8505-e4db9e0e6518"
+    },
+    {
+      "name": "Woodland Bellower",
+      "oracleId": "5859fd59-8732-414a-8932-007980af495d"
+    },
+    {
+      "name": "Worldly Tutor",
+      "oracleId": "e8863518-0bfa-49c3-8c6e-6c9116a81051"
+    }
+  ]
+}

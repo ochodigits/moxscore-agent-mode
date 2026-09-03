@@ -1,0 +1,14 @@
+# Test files must never be deployed as serverless functions.
+api/*.test.ts
+api/**/*.test.ts
+
+# Review working notes — not part of the app.
+findings.md
+review.txt
+
+# Local planning material and test fixtures are not deployment inputs.
+moxscore-plan-launch.md
+moxscore-v2-development-plan.md
+moxscore-v2-paid-development-plan.md
+moxscore-v2-paid-development-plan.docx
+supabase/migrations/*.test.ts

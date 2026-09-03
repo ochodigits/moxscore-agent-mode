@@ -1,0 +1,29 @@
+{
+  "comment": "Golden expectations for bracketEngine tests. *.cards.json are Scryfall snapshots (requested name -> card) so tests run offline. Regenerate with scripts in scratchpad / see BRACKET_RULES.md.",
+  "precon": {
+    "bracket": 2,
+    "gameChangers": 0,
+    "massLandDenial": 0,
+    "extraTurns": 0,
+    "fastMana": 1,
+    "tutors": 1,
+    "powerScoreMax": 4.4
+  },
+  "upgraded": {
+    "bracket": 3,
+    "gameChangers": 3,
+    "massLandDenial": 0,
+    "extraTurns": 0,
+    "fastMana": 2,
+    "tutors": 2,
+    "powerScoreMax": 6.4
+  },
+  "cedh": {
+    "bracket": 5,
+    "gameChangers": 19,
+    "massLandDenial": 0,
+    "fastMana": 10,
+    "tutors": 13,
+    "powerScoreMin": 8.5
+  }
+}

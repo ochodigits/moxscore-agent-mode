@@ -1,0 +1,100 @@
+// Golden fixture: precon-power Temur dragons list. Expected bracket 2.
+// 0 Game Changers, 0 MLD, 0 extra turns, 1 tutor, mid curve.
+
+// Commander
+1 Miirym, Sentinel Wyrm
+
+// Creatures
+1 Goldspan Dragon
+1 Thunderbreak Regent
+1 Glorybringer
+1 Savage Ventmaw
+1 Lathliss, Dragon Queen
+1 Scourge of Valkas
+1 Dragonlord's Servant
+1 Dragonspeaker Shaman
+1 Sarkhan's Rage
+1 Terror of the Peaks
+1 Old Gnawbone
+1 Hellkite Charger
+1 Utvara Hellkite
+1 Dragonborn Champion
+1 Beledros Witherbloom
+1 Hypersonic Dragon
+1 Icefall Regent
+1 Immersturm Predator
+1 Steel Hellkite
+1 Shivan Devastator
+1 Moonveil Regent
+1 Manaform Hellkite
+1 Nesting Dragon
+1 Rimescale Dragon
+1 Dream Pillager
+1 Scaled Nurturer
+1 Rishkar, Peema Renegade
+1 Sakura-Tribe Elder
+1 Solemn Simulacrum
+1 Temur Sabertooth
+
+// Ramp
+1 Sol Ring
+1 Arcane Signet
+1 Rampant Growth
+1 Cultivate
+1 Kodama's Reach
+1 Farseek
+1 Skyshroud Claim
+1 Gruul Signet
+1 Simic Signet
+1 Izzet Signet
+1 Herald's Horn
+
+// Card draw
+1 Harmonize
+1 Return of the Wildspeaker
+1 Behold the Multiverse
+1 Rishkar's Expertise
+1 Garruk's Uprising
+1 Elemental Bond
+1 Frostpyre Arcanist
+
+// Interaction
+1 Beast Within
+1 Chaos Warp
+1 Abrade
+1 Rapid Hybridization
+1 Pongify
+1 Negate
+1 Counterspell
+1 Blasphemous Act
+1 Earthquake
+1 Sarkhan the Masterless
+
+// Utility
+1 Diabolic Tutor
+1 Lightning Greaves
+1 Swiftfoot Boots
+1 Crucible of the Spirit Dragon
+1 Temur Ascendancy
+1 Dragon Tempest
+
+// Lands
+1 Command Tower
+1 Exotic Orchard
+1 Path of Ancestry
+1 Rootbound Crag
+1 Hinterland Harbor
+1 Sulfur Falls
+1 Frontier Bivouac
+1 Swiftwater Cliffs
+1 Rugged Highlands
+1 Thornwood Falls
+1 Evolving Wilds
+1 Terramorphic Expanse
+1 Temple of Abandon
+1 Temple of Epiphany
+1 Temple of Mystery
+1 Haven of the Spirit Dragon
+7 Mountain
+7 Forest
+5 Island

@@ -1,0 +1,63 @@
+name: Quality gate
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  schedule:
+    # Weekly full dependency audit (Monday 06:00 UTC).
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}-${{ github.event_name }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    # PR and main push gate: lint, tests, typecheck, build, production audit.
+    # Skip on the weekly schedule — that run is full-audit only.
+    if: github.event_name != 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install exact dependencies
+        run: npm ci
+
+      - name: Lint, test, typecheck, build, and audit production dependencies
+        run: npm run check
+
+  audit-all:
+    # Full tree audit (prod + dev) on main pushes and weekly schedule only.
+    # PRs already run production audit via `npm run check`; transitive/dev
+    # advisories should not block day-to-day PR merges.
+    if: github.event_name == 'push' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install exact dependencies
+        run: npm ci
+
+      - name: Audit all dependencies
+        run: npm run audit

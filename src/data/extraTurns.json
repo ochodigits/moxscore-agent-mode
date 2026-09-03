@@ -1,0 +1,219 @@
+{
+  "listVersion": "2026-07-03",
+  "source": "Scryfall otag:extra-turn (community tagger)",
+  "count": 53,
+  "cards": [
+    {
+      "name": "Alchemist's Gambit",
+      "oracleId": "271d8db6-8606-46d7-9812-75aa22fcfd8e"
+    },
+    {
+      "name": "Alrund's Epiphany",
+      "oracleId": "bc842838-1993-4480-b8fe-f9d9f2dee7a4"
+    },
+    {
+      "name": "Beacon of Tomorrows",
+      "oracleId": "85909caa-d2ad-4487-b9b7-6ac60a14b833"
+    },
+    {
+      "name": "Capture of Jingzhou",
+      "oracleId": "89aa65d9-2502-40b0-90b6-b25a8e9f6155"
+    },
+    {
+      "name": "Chance for Glory",
+      "oracleId": "324af60d-142b-4b6c-afe9-6aa36267d5ee"
+    },
+    {
+      "name": "Emrakul, the Promised End",
+      "oracleId": "4e7a8817-1a66-45c3-ade9-eac79b40b89f"
+    },
+    {
+      "name": "Eon Frolicker",
+      "oracleId": "c0a18a53-d520-4795-9b3b-0f93bcf35848"
+    },
+    {
+      "name": "Expropriate",
+      "oracleId": "a69265b2-0e37-4d86-866e-e4a923233b4d"
+    },
+    {
+      "name": "Final Fortune",
+      "oracleId": "8d0adc5c-3fdd-4e22-b783-5651f8e57b65"
+    },
+    {
+      "name": "Gonti's Aether Heart",
+      "oracleId": "69428825-3c40-486d-b051-14e97a598ce6"
+    },
+    {
+      "name": "Ichormoon Gauntlet",
+      "oracleId": "9fc7aba7-eda2-4134-9c10-31ee35201b72"
+    },
+    {
+      "name": "Kang the Conqueror",
+      "oracleId": "da6e24a4-8adc-41a1-b5eb-3e31dc1250c9"
+    },
+    {
+      "name": "Karn's Temporal Sundering",
+      "oracleId": "5afbd367-19c7-418f-994d-a7958fb1c4ae"
+    },
+    {
+      "name": "Last Chance",
+      "oracleId": "360039a5-1cbd-4ee3-8f94-21b5348e106a"
+    },
+    {
+      "name": "Lighthouse Chronologist",
+      "oracleId": "b19ff0dd-2041-461f-aa62-6dc273e4bbe5"
+    },
+    {
+      "name": "Lost Isle Calling",
+      "oracleId": "0efbf29c-09a0-4472-83ad-8d692c0232a5"
+    },
+    {
+      "name": "Magistrate's Scepter",
+      "oracleId": "487485a6-cf79-48c0-bea9-0ec6b3ee253c"
+    },
+    {
+      "name": "Magosi, the Waterveil",
+      "oracleId": "4bdffa67-e6b3-4588-b76e-c11db6f043ca"
+    },
+    {
+      "name": "Medomai the Ageless",
+      "oracleId": "b6b91ea7-a22c-4835-8c62-3360b0fd3a8b"
+    },
+    {
+      "name": "Mu Yanling",
+      "oracleId": "34e1477a-c0fb-4364-bb93-04a85c0c2517"
+    },
+    {
+      "name": "Nexus of Fate",
+      "oracleId": "6c1d22d4-f28e-4041-a9b6-1575e8929b61"
+    },
+    {
+      "name": "Notorious Throng",
+      "oracleId": "b1461f2a-2f12-49ae-8821-d934dddcb567"
+    },
+    {
+      "name": "Part the Waterveil",
+      "oracleId": "54dd35ee-6f89-460d-9370-72bc3fa6840a"
+    },
+    {
+      "name": "Perch Protection",
+      "oracleId": "295fe873-ecb5-4d5e-a73c-3af6c478afc5"
+    },
+    {
+      "name": "Plea for Power",
+      "oracleId": "8b886623-5c96-48dd-a3d2-fd5865c58ff5"
+    },
+    {
+      "name": "Ral Zarek",
+      "oracleId": "75ed6946-e7b1-4bf8-a05c-62a2ba5a6c79"
+    },
+    {
+      "name": "Regenerations Restored",
+      "oracleId": "a1e691f3-a3e9-4cfa-a761-d7e020364dfa"
+    },
+    {
+      "name": "Rise of the Eldrazi",
+      "oracleId": "982f70af-077f-40df-b2fe-7c80ebcc7712"
+    },
+    {
+      "name": "Sage of Hours",
+      "oracleId": "bdbf70da-af38-4827-9b8b-39f553ebd34a"
+    },
+    {
+      "name": "Savor the Moment",
+      "oracleId": "d5b9b75d-4bf0-4328-9bb3-7b260a0c46af"
+    },
+    {
+      "name": "Search the City",
+      "oracleId": "fe1b0b19-0994-4bc7-ab6c-d1419d274f40"
+    },
+    {
+      "name": "Second Chance",
+      "oracleId": "aa19bbf0-7de3-4ec3-a98b-2ac7533c6b0b"
+    },
+    {
+      "name": "Seedtime",
+      "oracleId": "3ba50802-57d0-450e-9e2f-a46a09d2f6bb"
+    },
+    {
+      "name": "Stitch in Time",
+      "oracleId": "59b2a90e-542f-4fb0-b290-ac79dc2892a4"
+    },
+    {
+      "name": "Teferi, Master of Time",
+      "oracleId": "e802fb53-7cf5-46bc-8a0b-f99cf5c20f74"
+    },
+    {
+      "name": "Teferi, Timebender",
+      "oracleId": "761bb894-d3f9-4248-af76-1559c502e342"
+    },
+    {
+      "name": "Temporal Extortion",
+      "oracleId": "13da5255-2fc5-43a4-a44c-13a5d9ff77c3"
+    },
+    {
+      "name": "Temporal Manipulation",
+      "oracleId": "6b6ac99a-7548-4cad-9fe5-ea611618ab9e"
+    },
+    {
+      "name": "Temporal Mastery",
+      "oracleId": "5c58b8e6-c572-461e-893e-a8c05f20ba17"
+    },
+    {
+      "name": "Temporal Trespass",
+      "oracleId": "c216b924-88ac-4853-9e95-0c345c09eeb6"
+    },
+    {
+      "name": "The Legend of Kuruk // Avatar Kuruk",
+      "oracleId": "201b8936-18f4-4881-a1d4-c308cf3832bf"
+    },
+    {
+      "name": "Time Sieve",
+      "oracleId": "3da5977a-36d4-4f32-ab9b-8b93809d818d"
+    },
+    {
+      "name": "Time Stretch",
+      "oracleId": "72e56963-a9dd-44dc-a4d3-992b4d89dd28"
+    },
+    {
+      "name": "Time Warp",
+      "oracleId": "dbd6a94b-62ff-4a10-9d52-bdd90b26e425"
+    },
+    {
+      "name": "Timesifter",
+      "oracleId": "99f8805f-6618-4838-a4e7-a3660e3b087f"
+    },
+    {
+      "name": "Timestream Navigator",
+      "oracleId": "d0896996-ee31-402e-b642-4e7cca4929fe"
+    },
+    {
+      "name": "Twice Upon a Time // Unlikely Meeting",
+      "oracleId": "04dc2e9c-312c-4af8-950c-6a7ed859c9be"
+    },
+    {
+      "name": "Ugin's Nexus",
+      "oracleId": "fe2afa18-54d0-4595-af27-256398793a42"
+    },
+    {
+      "name": "Ultimecia, Time Sorceress // Ultimecia, Omnipotent",
+      "oracleId": "70773879-b773-4e81-99ca-8f4bba478962"
+    },
+    {
+      "name": "Walk the Aeons",
+      "oracleId": "0ec36301-6282-49d4-85ea-6a46708e2f60"
+    },
+    {
+      "name": "Wanderwine Prophets",
+      "oracleId": "9ab36915-b600-4970-961a-403f5da0dba1"
+    },
+    {
+      "name": "Warrior's Oath",
+      "oracleId": "574044cf-2e2f-4b5c-b4d1-cf05ba814ab2"
+    },
+    {
+      "name": "Wormfang Manta",
+      "oracleId": "17abf8c6-70b6-4877-a0f2-a87b22fb2828"
+    }
+  ]
+}

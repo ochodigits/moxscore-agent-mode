@@ -1,0 +1,67 @@
+{
+  "version": "2026-07-03",
+  "comment": "Oracle-text / type-line patterns used by the Bracket Tuner replacement pool to match a cut card with candidates filling the same role, plus the Scryfall search query used to find replacement candidates for that role. The analyzer's own category detectors (src/lib/analysis.ts) remain the source of truth for the health score; these are a data-driven mirror usable server-side.",
+  "tagOrder": ["land", "counterspell", "boardwipe", "removal", "ramp", "tutor", "wincon", "protection", "draw"],
+  "tags": {
+    "tutor": {
+      "oracle": [
+        "search your library for a card",
+        "search your library for an? (artifact|creature|enchantment|instant|sorcery|planeswalker) card",
+        "tutor"
+      ],
+      "typeLine": [],
+      "scryfallQuery": "(o:\"search your library for a card\" or o:\"search your library for an artifact card\") mv<=4 -is:gamechanger"
+    },
+    "ramp": {
+      "oracle": [
+        "add \\{[wubrgc]\\}",
+        "add (one|two|three|x) mana",
+        "search your library for (up to \\w+ )?(a |an )?[\\w'’, ]*(land|forest|plains|island|swamp|mountain) cards?",
+        "create[^.\\n]*treasure token"
+      ],
+      "typeLine": [],
+      "scryfallQuery": "(t:artifact o:\"{T}: Add\" mv<=3 or o:\"search your library for a basic land card\" mv<=3)"
+    },
+    "draw": {
+      "oracle": ["draw (a|two|three|x|\\d+) cards?", "draw cards equal to", "investigate"],
+      "typeLine": [],
+      "scryfallQuery": "o:\"draw a card\" mv<=4 -t:land"
+    },
+    "removal": {
+      "oracle": [
+        "destroy target",
+        "exile target",
+        "return target [\\w' ]*(permanent|creature|artifact|enchantment)",
+        "damage to (target creature|any target)",
+        "target creature gets [-−]"
+      ],
+      "typeLine": [],
+      "scryfallQuery": "(o:\"destroy target\" or o:\"exile target\") mv<=3 -t:land"
+    },
+    "counterspell": {
+      "oracle": ["counter target"],
+      "typeLine": ["instant"],
+      "scryfallQuery": "t:instant o:\"counter target\" mv<=3"
+    },
+    "boardwipe": {
+      "oracle": ["destroy all", "exile all", "each (player|creature)[^.\\n]*sacrifices?"],
+      "typeLine": [],
+      "scryfallQuery": "(o:\"destroy all creatures\" or o:\"exile all creatures\") mv<=6"
+    },
+    "protection": {
+      "oracle": ["hexproof", "indestructible", "protection from", "gains? shroud", "can't be countered"],
+      "typeLine": [],
+      "scryfallQuery": "(o:hexproof or o:indestructible) o:gain mv<=3 -t:land"
+    },
+    "wincon": {
+      "oracle": ["you win the game", "loses? the game", "combat damage to a player[^.\\n]*extra"],
+      "typeLine": [],
+      "scryfallQuery": "(o:\"you win the game\" or (t:creature mv>=6 kw:trample))"
+    },
+    "land": {
+      "oracle": [],
+      "typeLine": ["land"],
+      "scryfallQuery": "t:land -t:basic (o:\"add one mana of any color\" or o:\"enters tapped\")"
+    }
+  }
+}

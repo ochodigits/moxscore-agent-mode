@@ -1,0 +1,415 @@
+{
+  "listVersion": "2026-07-03",
+  "source": "Scryfall otag:mass-land-denial (community tagger), manually reviewed",
+  "count": 102,
+  "cards": [
+    {
+      "name": "Acid Rain",
+      "oracleId": "6ae3c3a2-bd17-4fea-ae27-9d2d1eaf8cc0"
+    },
+    {
+      "name": "Ajani Vengeant",
+      "oracleId": "f953afdf-96f7-4851-994c-1617e8f5e5c9"
+    },
+    {
+      "name": "Apocalypse",
+      "oracleId": "82c8f5dd-563d-4fd0-bd43-7ee2001d3777"
+    },
+    {
+      "name": "Armageddon",
+      "oracleId": "c9ed8b01-959a-47d6-891e-0abbdccf6e4f"
+    },
+    {
+      "name": "Avalanche",
+      "oracleId": "a349e526-882c-454f-ba79-ad17340f8153"
+    },
+    {
+      "name": "Back to Basics",
+      "oracleId": "05c2dec2-d2f7-4036-b91f-4fccba10a8bb"
+    },
+    {
+      "name": "Balancing Act",
+      "oracleId": "4c68282b-776f-463a-9652-f611538c53ee"
+    },
+    {
+      "name": "Bearer of the Heavens",
+      "oracleId": "54e86bc8-ff48-49be-902c-4923d59901a7"
+    },
+    {
+      "name": "Bend or Break",
+      "oracleId": "4362efe4-339d-40e1-bd72-3cc9e41bf93f"
+    },
+    {
+      "name": "Blood Moon",
+      "oracleId": "94fac5fe-97d5-4c12-a80c-8efff9d853ae"
+    },
+    {
+      "name": "Boil",
+      "oracleId": "3a51485b-31b2-4fa5-824a-a919f9d28ca8"
+    },
+    {
+      "name": "Boiling Seas",
+      "oracleId": "7421b711-81a4-4042-b024-f55bf9ff203f"
+    },
+    {
+      "name": "Boom // Bust",
+      "oracleId": "514fdac0-95f4-4034-b891-283fe0fb6da6"
+    },
+    {
+      "name": "Break the Ice",
+      "oracleId": "22ec98d2-0ac5-48a2-b48b-c6a98f35ecf0"
+    },
+    {
+      "name": "Burning Sands",
+      "oracleId": "262dd956-d90d-4782-91b6-6d183ec08b6c"
+    },
+    {
+      "name": "Cataclysm",
+      "oracleId": "b0479ca4-e925-4aa7-a4fa-f7e01f899ac5"
+    },
+    {
+      "name": "Catastrophe",
+      "oracleId": "ed68160e-5e3d-44f2-ac7a-3749fda10119"
+    },
+    {
+      "name": "Chaos Moon",
+      "oracleId": "728e2960-1d85-4b3f-8b5b-915f9b9ffd2f"
+    },
+    {
+      "name": "Choke",
+      "oracleId": "057fa60b-10b0-4612-be0d-157076c82241"
+    },
+    {
+      "name": "Cleansing",
+      "oracleId": "46b83657-1699-4162-a4bb-b792da396fe6"
+    },
+    {
+      "name": "Contamination",
+      "oracleId": "4013b4c2-c9ed-4d14-90f0-97214ec1fded"
+    },
+    {
+      "name": "Conversion",
+      "oracleId": "a24e05fb-dffb-4400-b4ca-22fdde45e7a7"
+    },
+    {
+      "name": "Curse of Marit Lage",
+      "oracleId": "6fde4790-4186-4786-aa1a-b6a53bfadc1c"
+    },
+    {
+      "name": "Curse of the Cabal",
+      "oracleId": "cafede0d-aa14-4266-b619-321ac756262d"
+    },
+    {
+      "name": "Damping Sphere",
+      "oracleId": "fd50d76c-7654-47b9-a5b6-d075874e4357"
+    },
+    {
+      "name": "Death Cloud",
+      "oracleId": "680f5eca-b98e-4f73-a852-ab629d94297e"
+    },
+    {
+      "name": "Decree of Annihilation",
+      "oracleId": "6679b462-3c90-418c-8727-acd1a61d988b"
+    },
+    {
+      "name": "Desolation",
+      "oracleId": "a80c3af8-470e-4e95-9579-cfdf18fbdbfa"
+    },
+    {
+      "name": "Desolation Angel",
+      "oracleId": "87f82107-eaba-484a-800d-e61a0cc5e1f2"
+    },
+    {
+      "name": "Destructive Flow",
+      "oracleId": "f7544a96-46b3-4cdc-8b14-c7b6daecdabd"
+    },
+    {
+      "name": "Devastating Dreams",
+      "oracleId": "18994c4c-9b5d-4b58-a5c3-646fbc92f9c7"
+    },
+    {
+      "name": "Devastation",
+      "oracleId": "052838cb-dcf0-46f5-82b1-c3ed863b42b7"
+    },
+    {
+      "name": "Dimensional Breach",
+      "oracleId": "70d4f764-fca1-477a-9b0f-bbfcc1f7dfb1"
+    },
+    {
+      "name": "Dovin Baan",
+      "oracleId": "5b33bfbf-e4e1-43de-9c96-ccdc2916510a"
+    },
+    {
+      "name": "Drought",
+      "oracleId": "ecba74bd-850e-4cbe-9b1c-b0d4d6f27d1c"
+    },
+    {
+      "name": "Earthlink",
+      "oracleId": "c6e4a5c6-3c9b-49d5-8288-1be46be657dc"
+    },
+    {
+      "name": "Epicenter",
+      "oracleId": "264cb7f6-6d36-4e58-87f4-83ccaa998a32"
+    },
+    {
+      "name": "Equipoise",
+      "oracleId": "aab905ef-b945-4523-b26f-fb5e6932bb56"
+    },
+    {
+      "name": "Exhaustion",
+      "oracleId": "0e7b9caf-8285-4386-98bc-9a809827f447"
+    },
+    {
+      "name": "Fall of the Thran",
+      "oracleId": "341803d9-fd29-4721-81bf-ae9b7f1c01d2"
+    },
+    {
+      "name": "Flashfires",
+      "oracleId": "c281f436-8c77-48f7-b31c-d40cd7f9ed6a"
+    },
+    {
+      "name": "Gideon, Champion of Justice",
+      "oracleId": "5843bf12-27db-4e7d-81ee-98874bea72c7"
+    },
+    {
+      "name": "Gilt-Leaf Archdruid",
+      "oracleId": "0bd5cce9-364f-4d0d-85cb-1a0e09b4f015"
+    },
+    {
+      "name": "Glaciers",
+      "oracleId": "a4a9c2bb-e6d0-4665-8b2f-e90c78784303"
+    },
+    {
+      "name": "Global Ruin",
+      "oracleId": "4a7b89b2-5fe9-4d39-9d42-3ca78bcf6d40"
+    },
+    {
+      "name": "Harbinger of the Seas",
+      "oracleId": "84910453-e5dc-4bff-8554-86a5f4ab2746"
+    },
+    {
+      "name": "Hokori, Dust Drinker",
+      "oracleId": "d2aaf485-8c74-4a27-b80b-f600c20d8b9c"
+    },
+    {
+      "name": "Illusionary Terrain",
+      "oracleId": "17ae63fa-fd63-45e6-81c1-bf30851bf77c"
+    },
+    {
+      "name": "Impending Disaster",
+      "oracleId": "cf0799f3-ef64-4fcc-924a-5265e52c9727"
+    },
+    {
+      "name": "Infernal Darkness",
+      "oracleId": "dd821fca-79a0-48a9-b1cf-5a496bc04f65"
+    },
+    {
+      "name": "Jokulhaups",
+      "oracleId": "7bdfe368-353c-4f8d-851f-05b7ea9f905d"
+    },
+    {
+      "name": "Keldon Firebombers",
+      "oracleId": "d5e02fa5-827e-414b-acb5-932de4bb3ee3"
+    },
+    {
+      "name": "Land Equilibrium",
+      "oracleId": "a3711453-b17d-4b1c-b726-9b41f36d07ab"
+    },
+    {
+      "name": "Liliana of the Veil",
+      "oracleId": "0ba134d8-ee7d-48ec-8dc6-57942b8e9261"
+    },
+    {
+      "name": "Liliana, Dreadhorde General",
+      "oracleId": "5e958212-6a5b-4288-8d31-f1572619d7dc"
+    },
+    {
+      "name": "Magus of the Balance",
+      "oracleId": "ed450f48-e69d-48d7-82cc-79cf89b2a1fb"
+    },
+    {
+      "name": "Magus of the Moon",
+      "oracleId": "6800d01c-345d-4932-a2a4-8df0fb1902f2"
+    },
+    {
+      "name": "Mana Breach",
+      "oracleId": "221d0305-94db-4791-9dc7-89ee96c7fcd6"
+    },
+    {
+      "name": "Mana Vortex",
+      "oracleId": "98b88734-09e2-4209-a787-9b5b345391f9"
+    },
+    {
+      "name": "Mist of Stagnation",
+      "oracleId": "e78673c4-a969-443f-b1a4-0eb37b8111af"
+    },
+    {
+      "name": "Myojin of Infinite Rage",
+      "oracleId": "aba1d01e-c340-47a3-8432-9d8c4a5cdfe0"
+    },
+    {
+      "name": "Naked Singularity",
+      "oracleId": "fb5ec55d-4a35-432a-be6e-c295f1b2e603"
+    },
+    {
+      "name": "Nature's Wrath",
+      "oracleId": "5a647f28-6e26-4262-8593-d582e0a691f7"
+    },
+    {
+      "name": "Obliterate",
+      "oracleId": "47496941-8007-45a0-a981-76c683cbddc1"
+    },
+    {
+      "name": "Omen of Fire",
+      "oracleId": "5935e9b3-b9b9-413c-ba17-103f5792131a"
+    },
+    {
+      "name": "Overburden",
+      "oracleId": "8104e454-77f5-4d38-894e-41ed0d74c17c"
+    },
+    {
+      "name": "Pox Plague",
+      "oracleId": "c505d304-9428-4532-87a2-167c69f16969"
+    },
+    {
+      "name": "Price of Glory",
+      "oracleId": "35064a72-c052-496f-8f1a-6dbc5e617d3f"
+    },
+    {
+      "name": "Quicksilver Fountain",
+      "oracleId": "0e7cf14a-6149-4ba9-b3f5-c5faf9f772bc"
+    },
+    {
+      "name": "Raiding Party",
+      "oracleId": "1d9b8859-14e3-4bbe-ad92-916b25a37b31"
+    },
+    {
+      "name": "Ravages of War",
+      "oracleId": "265236d1-d96c-4424-835e-a0fe91c41170"
+    },
+    {
+      "name": "Razia's Purification",
+      "oracleId": "60e95faf-1496-4298-9588-52b50b05fc6b"
+    },
+    {
+      "name": "Razing Snidd",
+      "oracleId": "bbcd2045-cf51-4346-a561-ebae8ffdc181"
+    },
+    {
+      "name": "Reality Twist",
+      "oracleId": "2c6f9fdb-ee27-4cd8-9d4d-1ea8b2830f73"
+    },
+    {
+      "name": "Realm Razer",
+      "oracleId": "90646d77-9b35-4f87-94ee-255c9f150456"
+    },
+    {
+      "name": "Restore Balance",
+      "oracleId": "ca79d130-6387-47b0-bde8-f45dd93f9221"
+    },
+    {
+      "name": "Ritual of Subdual",
+      "oracleId": "e0587218-206e-41ed-af3c-f06b7a668e90"
+    },
+    {
+      "name": "Ruination",
+      "oracleId": "59dbc873-72d9-4e7b-9442-2c7b8e8523e1"
+    },
+    {
+      "name": "Rumbling Crescendo",
+      "oracleId": "2e7e19c2-5399-433d-9653-d956f11838f5"
+    },
+    {
+      "name": "Shivan Harvest",
+      "oracleId": "27c3d7cd-f92e-4203-9fb5-f6b4776f6ffd"
+    },
+    {
+      "name": "Soulscour",
+      "oracleId": "d7644325-8a0f-4f40-bab6-518df7ac1d14"
+    },
+    {
+      "name": "Spelltithe Enforcer",
+      "oracleId": "0da4988f-47ca-4786-ac33-edbc9cfd6785"
+    },
+    {
+      "name": "Stasis",
+      "oracleId": "a8cf1379-0195-4e11-b994-481ef1284245"
+    },
+    {
+      "name": "Stench of Evil",
+      "oracleId": "14062abe-14df-4dbe-ad7b-530e5f6c4988"
+    },
+    {
+      "name": "Stoneshaker Shaman",
+      "oracleId": "5458689c-48e0-48b6-bda8-048fa4718734"
+    },
+    {
+      "name": "Storm Cauldron",
+      "oracleId": "5a51b168-02d1-4eb4-8ccc-614ab6f6cffa"
+    },
+    {
+      "name": "Sunder",
+      "oracleId": "fddc93a2-912e-402a-9d0e-34f778e659ea"
+    },
+    {
+      "name": "Tainted Aether",
+      "oracleId": "a61ceda1-5993-479e-945f-15753eeb7049"
+    },
+    {
+      "name": "Tectonic Break",
+      "oracleId": "4a3c6d0e-6d77-4434-95f4-737879de026f"
+    },
+    {
+      "name": "Temporal Distortion",
+      "oracleId": "b0a16783-31c2-4b2a-835d-774dc385f99a"
+    },
+    {
+      "name": "Thieves' Auction",
+      "oracleId": "230ee0b4-eb75-457f-b171-72d585cfb5aa"
+    },
+    {
+      "name": "Thoughts of Ruin",
+      "oracleId": "bb9e1d12-ebcc-4a8a-baef-9f69638a51cd"
+    },
+    {
+      "name": "Tsabo's Web",
+      "oracleId": "96a4e515-2b4e-4c2d-aa1a-963597484723"
+    },
+    {
+      "name": "Tsunami",
+      "oracleId": "ef2b1565-7b02-4cab-9031-beb1701ee929"
+    },
+    {
+      "name": "Vorinclex, Voice of Hunger",
+      "oracleId": "dbf0ad03-ab31-49d2-89b1-05b45948a61f"
+    },
+    {
+      "name": "Whims of the Fates",
+      "oracleId": "7d359434-eb1b-478e-a745-10e2c564d89f"
+    },
+    {
+      "name": "Wildfire",
+      "oracleId": "0da68ca2-07fd-4359-95a9-fb2f815e6ed0"
+    },
+    {
+      "name": "Winter Moon",
+      "oracleId": "b922f057-1c91-43eb-b74a-8a933b1be2d2"
+    },
+    {
+      "name": "Winter's Night",
+      "oracleId": "e4f73802-b639-47ab-a6c6-f761afa4e00e"
+    },
+    {
+      "name": "Worldfire",
+      "oracleId": "ae0b8c13-0a71-4a60-bf9f-6e2da9503e9c"
+    },
+    {
+      "name": "Worldpurge",
+      "oracleId": "285ecbd5-ff7c-4919-ab0b-7fc05e5a0a0a"
+    },
+    {
+      "name": "Worldslayer",
+      "oracleId": "31be715f-9ad3-435c-9e52-e108fe96b969"
+    }
+  ]
+}

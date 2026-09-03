@@ -1,0 +1,62 @@
+{
+  "name": "moxscore",
+  "private": true,
+  "version": "2.0.0-core.0",
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b --pretty false",
+    "audit": "node scripts/audit-dependencies.mjs",
+    "audit:prod": "node scripts/audit-dependencies.mjs --omit=dev",
+    "eval:ai": "node scripts/run-ai-evaluation.mjs",
+    "check": "npm run lint && npm run test && npm run typecheck && npm run build && npm run audit:prod"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  },
+  "overrides": {
+    "undici": "^7.29.0",
+    "brace-expansion": "^5.0.9",
+    "nanoid": "3.3.18",
+    "browserslist": "4.28.8"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.108.0",
+    "@tanstack/react-query": "^5.101.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-router-dom": "7.18.3",
+    "sharp": "^0.35.3",
+    "stripe": "^22.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.0",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^24.12.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@vitest/ui": "^4.1.8",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "jsdom": "^29.1.1",
+    "postcss": "^8.5.23",
+    "tailwindcss": "^4.3.0",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.59.2",
+    "vite": "^8.0.12",
+    "vitest": "^4.1.8"
+  }
+}

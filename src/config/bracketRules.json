@@ -1,0 +1,57 @@
+{
+  "version": "2026-07-03",
+  "gameChangersListVersion": "2026-02-09",
+  "earlyComboMaxCombinedMV": 7,
+  "brackets": {
+    "1": {
+      "name": "Exhibition",
+      "gameChangersMax": 0,
+      "massLandDenialMax": 0,
+      "extraTurnsMax": 0,
+      "twoCardCombosMax": 0,
+      "earlyTwoCardCombosMax": 0,
+      "powerBand": [1, 3]
+    },
+    "2": {
+      "name": "Core",
+      "gameChangersMax": 0,
+      "massLandDenialMax": 0,
+      "extraTurnsMax": 1,
+      "twoCardCombosMax": 0,
+      "earlyTwoCardCombosMax": 0,
+      "powerBand": [2, 4]
+    },
+    "3": {
+      "name": "Upgraded",
+      "gameChangersMax": 3,
+      "massLandDenialMax": 0,
+      "extraTurnsMax": 3,
+      "twoCardCombosMax": null,
+      "earlyTwoCardCombosMax": 0,
+      "powerBand": [4, 6]
+    },
+    "4": {
+      "name": "Optimized",
+      "gameChangersMax": null,
+      "massLandDenialMax": null,
+      "extraTurnsMax": null,
+      "twoCardCombosMax": null,
+      "earlyTwoCardCombosMax": null,
+      "powerBand": [6, 8]
+    },
+    "5": {
+      "name": "cEDH",
+      "gameChangersMax": null,
+      "massLandDenialMax": null,
+      "extraTurnsMax": null,
+      "twoCardCombosMax": null,
+      "earlyTwoCardCombosMax": null,
+      "powerBand": [8, 10]
+    }
+  },
+  "powerBracketFloors": {
+    "3": 4.5,
+    "4": 6.5,
+    "5": 8.5
+  }
+}

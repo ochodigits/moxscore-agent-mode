@@ -1,0 +1,9 @@
+{
+  "version": "2026-09-02",
+  "upgrade": {
+    "powerSlack": 0.5,
+    "maxAdds": 8,
+    "maxWeakCuts": 5,
+    "minWeakCutCmc": 4
+  }
+}

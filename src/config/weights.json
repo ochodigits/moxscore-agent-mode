@@ -1,0 +1,17 @@
+{
+  "version": "2026-07-03",
+  "signals": {
+    "fastMana": { "weight": 0.3, "saturation": 8 },
+    "tutors": { "weight": 0.25, "saturation": 8 },
+    "interaction": { "weight": 0.2, "saturation": 12, "cheapMvMax": 2 },
+    "curve": { "weight": 0.25, "avgMvBest": 2.0, "avgMvWorst": 4.2 }
+  },
+  "hardSignalBonuses": {
+    "perGameChanger": 0.25,
+    "perEarlyCombo": 1.5,
+    "perLateCombo": 0.5,
+    "perExtraTurn": 0.1,
+    "perMassLandDenial": 0.3,
+    "maxTotalBonus": 3.0
+  }
+}
