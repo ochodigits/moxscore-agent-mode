@@ -1,6 +1,7 @@
 import { analyzeCards, confidenceFor, type AnalysisResult } from '../lib/localEngine.ts'
 import { runAnalysis } from '../lib/scryfallEngine.ts'
 import { DEFAULT_FORMAT } from '../lib/formats.ts'
+import { formatScore, roundScore } from '../lib/formatScore.ts'
 import { clamp100 } from '../lib/scoring.ts'
 import { detectCommanders } from '../lib/parser.ts'
 import { heuristicCard } from './heuristics.ts'
@@ -56,20 +57,31 @@ export function agentOverall(categories: AgentCategories): number {
   )
 }
 
+function roundCategories(categories: AgentCategories): AgentCategories {
+  return {
+    ramp: roundScore(categories.ramp),
+    draw: roundScore(categories.draw),
+    interaction: roundScore(categories.interaction),
+    curve: roundScore(categories.curve),
+    wincons: roundScore(categories.wincons),
+  }
+}
+
 function weaknessDetail(category: AgentCategory, result: AnalysisResult, score: number): string {
   const interactionCount = result.counts.interaction + result.counts.wipes
   const high = highCmcQty(result)
+  const shown = formatScore(score)
   switch (category) {
     case 'ramp':
-      return `${result.counts.ramp} ramp pieces (target 8–12). Score ${score}.`
+      return `${result.counts.ramp} ramp pieces (target 8–12). Score ${shown}.`
     case 'draw':
-      return `${result.counts.draw} draw effects (target 8–12). Score ${score}.`
+      return `${result.counts.draw} draw effects (target 8–12). Score ${shown}.`
     case 'interaction':
-      return `${interactionCount} answers including wipes (target 10–15). Score ${score}.`
+      return `${interactionCount} answers including wipes (target 10–15). Score ${shown}.`
     case 'curve':
-      return `Average nonland CMC ${result.avgCmc.toFixed(2)} with ${result.counts.lands} lands and ${high} cards at 5+ mana. Score ${score}.`
+      return `Average nonland CMC ${result.avgCmc.toFixed(2)} with ${result.counts.lands} lands and ${high} cards at 5+ mana. Score ${shown}.`
     case 'wincons':
-      return `${result.counts.wincons} win conditions detected. Score ${score}.`
+      return `${result.counts.wincons} win conditions detected. Score ${shown}.`
   }
 }
 
@@ -120,8 +132,8 @@ export function buildAgentSnapshot(result: AnalysisResult): AgentAnalysis {
   return {
     commander: commanders[0] ?? scored.commander ?? 'Unknown',
     card_count: scored.counts.total,
-    overall: agentOverall(categories),
-    categories,
+    overall: roundScore(agentOverall(categories)),
+    categories: roundCategories(categories),
     counts: {
       ramp: scored.counts.ramp,
       draw: scored.counts.draw,
